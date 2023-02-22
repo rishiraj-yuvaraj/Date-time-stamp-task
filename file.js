@@ -9,6 +9,6 @@ let secs = today.getSeconds();
 
 let result = `${hours}:${mins}:${secs}`;
 
-fs.appendFile(`./CurrentTime/currentTime.html`,"\n" + result, (err) => {
+fs.appendFile(`./CurrentTime/currentTime.txt`,"\n" + result, (err) => {
     console.log(result);
 });
